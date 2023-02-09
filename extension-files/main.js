@@ -1,20 +1,20 @@
-const tab = async function getCurrentTab() {
-  let queryOptions = { active: true, currentWindow: true };
-  // `tab` will either be a `tabs.Tab` instance or `undefined`.
-  let [tab] = await chrome.tabs.query(queryOptions);
-  return tab;
-}
+// const tab = async function getCurrentTab() {
+//   let queryOptions = { active: true, currentWindow: true };
+//   // `tab` will either be a `tabs.Tab` instance or `undefined`.
+//   let [tab] = await chrome.tabs.query(queryOptions);
+//   return tab;
+// }
 
 document.addEventListener('DOMContentLoaded', () => {
   // main()
 
-  chrome.scripting.executeScript({
-    target: { tabId: tab.id },
-    function: main
-  });
-});
+  //   chrome.scripting.executeScript({
+  //     target: { tabId: tab.id },
+  //     function: main
+  //   });
+  // });
 
-function main() {
+  // function main() {
   const body = document.querySelector('body');
 
   for (let left = 0; left < window.innerWidth + 50; left += 50) {
@@ -186,6 +186,6 @@ function main() {
     }
   })
 
-}
+  // }
   // });
-// });
+});
