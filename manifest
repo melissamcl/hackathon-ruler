@@ -1,6 +1,0 @@
-{
-    "manifest_version": 2,
-    "name": "Acho, where are we?",
-    "version": "0.1.0",
-    "description": "Ask Acho where you are and he'll bark the page title at you."
-}

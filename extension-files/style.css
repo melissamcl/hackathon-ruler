@@ -1,10 +1,8 @@
-<html>
+    body {
+      width: 1000px;
+      height: 1000px;
+    }
 
-<head>
-  <meta charset="UTF-8">
-  <title>Hackathon</title>
-
-  <style>
     #rect-drawing {
       border: 2px solid red;
       position: absolute;
@@ -27,17 +25,6 @@
       min-height: 50px;
       vertical-align: center;
     }
-
-    /* #width-label:before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      border-top: 1px solid red;
-      width: 100%;
-      transform: translateY(-50%);
-      z-index: 0;
-    } */
 
     .label-text {
       background-color: #ffffff72;
@@ -101,30 +88,3 @@
       margin: 0;
       position: fixed;
     }
-
-    body {
-      height: 3000px;
-      background-color: #5c5757;
-    }
-  </style>
-</head>
-
-<body></body>
-
-<script src="/extension-files/main.js"></script>
-
-
-</html>
-<!-- 
-  "action": {
-  "default_popup": "popup.html"
-  }, -->
-
-<!-- "host_permissions": [
-    "https://*/*",
-    "http://*/*"
-    ],
-
-      "background": {
-      "service_worker": "background.js"
-      }, -->
